@@ -123,7 +123,7 @@ cmd_add() {
         # Extract version from JSON
         ver=$(get_pkg_ver "$pkg_name")
         
-        echo "Installing $pkg_name=$ver..."
+        echo "Installing $pkg_name-$ver..."
         
         # Download
         temp_file="/tmp/${pkg_name}.tar.gz"
