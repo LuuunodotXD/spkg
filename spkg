@@ -14,7 +14,7 @@ acquire_lock() {
     if [ -f "$LOCK_FILE" ]; then
         old_pid=$(cat "$LOCK_FILE" 2>/dev/null)
         if kill -0 "$old_pid" 2>/dev/null; then
-            echo "Error: Another instance of spkg is running (PID: $old_pid)"
+            echo "error: another instance of spkg is running (PID: $old_pid)"
             exit 1
         fi
     fi
@@ -26,7 +26,7 @@ acquire_lock() {
 # Check if running as root (except for list command)
 check_root() {
     if [ "$1" != "list" ] && [ "$(id -u)" != "0" ]; then
-        echo "Error: This command requires root privileges"
+        echo "error: this command requires root privileges"
         exit 1
     fi
 }
@@ -84,9 +84,9 @@ cmd_sync() {
     init_dirs
     
     if wget -O "$PACKAGES_FILE" "$REPO_URL"; then
-        echo "Repository synced successfully"
+        echo "repository synced successfully"
     else
-        echo "Error: Failed to download repository"
+        echo "error: failed to download repository"
         exit 1
     fi
 }
@@ -94,7 +94,7 @@ cmd_sync() {
 # Command: list
 cmd_list() {
     if [ ! -f "$INSTALLED_FILE" ]; then
-        echo "No packages installed"
+        echo "no packages installed"
         return 0
     fi
     
@@ -108,7 +108,7 @@ cmd_add() {
     for pkg_name in "$@"; do
         # Check if already installed
         if [ -n "$(get_installed_version "$pkg_name")" ]; then
-            echo "Package '$pkg_name' is already installed"
+            echo "package '$pkg_name' is already installed"
             continue
         fi
         
@@ -116,26 +116,26 @@ cmd_add() {
         link=$(get_pkg_info "$pkg_name")
         
         if [ -z "$link" ]; then
-            echo "Error: Package '$pkg_name' not found in repository"
+            echo "error: package '$pkg_name' not found in repository"
             continue
         fi
         
         # Extract version from JSON
         ver=$(get_pkg_ver "$pkg_name")
         
-        echo "Installing $pkg_name-$ver..."
+        echo "installing $pkg_name-$ver..."
         
         # Download
         temp_file="/tmp/${pkg_name}.tar.gz"
         if ! wget -O "$temp_file" "$link"; then
-            echo "Error: Failed to download $pkg_name"
+            echo "error: failed to download $pkg_name"
             rm -f "$temp_file"
             continue
         fi
         
         # Extract to root
         if ! tar -xzf "$temp_file" -C /; then
-            echo "Error: Failed to extract $pkg_name"
+            echo "error: failed to extract $pkg_name"
             rm -f "$temp_file"
             continue
         fi
@@ -147,7 +147,7 @@ cmd_add() {
         add_installed "$pkg_name" "$ver"
         
         rm -f "$temp_file"
-        echo "Package '$pkg_name' installed successfully"
+        echo "package '$pkg_name' installed successfully"
     done
 }
 
@@ -158,11 +158,11 @@ cmd_del() {
     for pkg_name in "$@"; do
         # Check if installed
         if [ -z "$(get_installed_version "$pkg_name")" ]; then
-            echo "Package '$pkg_name' is not installed"
+            echo "package '$pkg_name' is not installed"
             continue
         fi
         
-        echo "Removing $pkg_name..."
+        echo "removing $pkg_name..."
         
         # Remove files
         files_list="$FILES_DIR/${pkg_name}.files"
@@ -175,7 +175,7 @@ cmd_del() {
         
         # Remove from installed.info
         remove_installed "$pkg_name"
-        echo "Package '$pkg_name' removed"
+        echo "package '$pkg_name' removed"
     done
 }
 
@@ -186,7 +186,7 @@ cmd_up() {
     # If no arguments, update all packages
     if [ $# -eq 0 ]; then
         if [ ! -f "$INSTALLED_FILE" ]; then
-            echo "No packages installed"
+            echo "no packages installed"
             return 0
         fi
         
@@ -203,25 +203,25 @@ cmd_up() {
         installed_ver=$(get_installed_version "$pkg_name")
         
         if [ -z "$installed_ver" ]; then
-            echo "Package '$pkg_name' is not installed"
+            echo "package '$pkg_name' is not installed"
             continue
         fi
         
         link=$(get_pkg_info "$pkg_name")
         
         if [ -z "$link" ]; then
-            echo "Error: Package '$pkg_name' not found in repository"
+            echo "error: package '$pkg_name' not found in repository"
             continue
         fi
         
         available_ver=$(get_pkg_ver "$pkg_name")
         
         if [ "$installed_ver" = "$available_ver" ]; then
-            echo "Package '$pkg_name' is already up to date"
+            echo "package '$pkg_name' is already up to date"
             continue
         fi
         
-        echo "Updating $pkg_name: $installed_ver → $available_ver"
+        echo "updating $pkg_name: $installed_ver → $available_ver"
         cmd_del "$pkg_name"
         cmd_add "$pkg_name"
     done
@@ -245,14 +245,14 @@ main() {
             ;;
         add)
             if [ $# -eq 0 ]; then
-                echo "Usage: spkg add <pkg> [pkg...]"
+                echo "usage: spkg add <pkg> [pkg...]"
                 exit 1
             fi
             cmd_add "$@"
             ;;
         del)
             if [ $# -eq 0 ]; then
-                echo "Usage: spkg del <pkg> [pkg...]"
+                echo "usage: spkg del <pkg> [pkg...]"
                 exit 1
             fi
             cmd_del "$@"
@@ -261,14 +261,14 @@ main() {
             cmd_up "$@"
             ;;
         *)
-            echo "Usage: spkg {sync|list|add|del|up} [options]"
+            echo "usage: spkg {sync|list|add|del|up} [options]"
             echo ""
-            echo "Commands:"
-            echo "  sync              Download repository"
-            echo "  list              List installed packages"
-            echo "  add <pkg> [...]   Install packages"
-            echo "  del <pkg> [...]   Remove packages"
-            echo "  up [pkg ...]      Update packages (all if no args)"
+            echo "commands:"
+            echo "  sync              download repository"
+            echo "  list              list installed packages"
+            echo "  add <pkg> [...]   install packages"
+            echo "  del <pkg> [...]   remove packages"
+            echo "  up [pkg ...]      update packages (all if no args)"
             exit 1
             ;;
     esac
