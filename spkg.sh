@@ -1,0 +1,277 @@
+#!/bin/sh
+# SPKG - Simple Package Manager
+# Minimal, POSIX compatible, toybox sh friendly
+
+REPO_URL="https://raw.githubusercontent.com/LuuunodotXD/spkg/main/packages.json"
+SPKG_DIR="/usr/share/spkg"
+PACKAGES_FILE="$SPKG_DIR/packages.json"
+INSTALLED_FILE="$SPKG_DIR/installed.info"
+FILES_DIR="$SPKG_DIR/files"
+LOCK_FILE="/tmp/spkg.lock"
+
+# PID Lock
+acquire_lock() {
+    if [ -f "$LOCK_FILE" ]; then
+        old_pid=$(cat "$LOCK_FILE" 2>/dev/null)
+        if kill -0 "$old_pid" 2>/dev/null; then
+            echo "Error: Another instance of spkg is running (PID: $old_pid)"
+            exit 1
+        fi
+    fi
+    
+    echo "$$" > "$LOCK_FILE"
+    trap 'rm -f "$LOCK_FILE"' EXIT
+}
+
+# Check if running as root (except for list command)
+check_root() {
+    if [ "$1" != "list" ] && [ "$(id -u)" != "0" ]; then
+        echo "Error: This command requires root privileges"
+        exit 1
+    fi
+}
+
+# Initialize directories
+init_dirs() {
+    mkdir -p "$SPKG_DIR" "$FILES_DIR"
+}
+
+# Get package info from JSON
+get_pkg_info() {
+    pkg_name="$1"
+    
+    grep -A 2 "\"pkg\": \"$pkg_name\"" "$PACKAGES_FILE" | \
+    grep "\"link\"" | \
+    sed 's/.*: "\([^"]*\)".*/\1/'
+}
+
+# Get package version from JSON
+get_pkg_ver() {
+    pkg_name="$1"
+
+    grep -A 3 "\"pkg\": \"$pkg_name\"" "$PACKAGES_FILE" | \
+    grep "\"ver\"" | \
+    sed 's/.*: "\([^"]*\)".*/\1/'
+}
+
+# Get installed version
+get_installed_version() {
+    pkg_name="$1"
+    grep "^${pkg_name}=" "$INSTALLED_FILE" 2>/dev/null | cut -d'=' -f2
+}
+
+# Add package to installed.info
+add_installed() {
+    pkg_name="$1"
+    version="$2"
+    
+    # Remove if already exists
+    grep -v "^${pkg_name}=" "$INSTALLED_FILE" > "${INSTALLED_FILE}.tmp" 2>/dev/null
+    echo "${pkg_name}=${version}" >> "${INSTALLED_FILE}.tmp"
+    mv "${INSTALLED_FILE}.tmp" "$INSTALLED_FILE"
+}
+
+# Remove package from installed.info
+remove_installed() {
+    pkg_name="$1"
+    grep -v "^${pkg_name}=" "$INSTALLED_FILE" > "${INSTALLED_FILE}.tmp"
+    mv "${INSTALLED_FILE}.tmp" "$INSTALLED_FILE"
+}
+
+# Command: sync
+cmd_sync() {
+    echo "Syncing repository..."
+    init_dirs
+    
+    if wget -O "$PACKAGES_FILE" "$REPO_URL"; then
+        echo "Repository synced successfully"
+    else
+        echo "Error: Failed to download repository"
+        exit 1
+    fi
+}
+
+# Command: list
+cmd_list() {
+    if [ ! -f "$INSTALLED_FILE" ]; then
+        echo "No packages installed"
+        return 0
+    fi
+    
+    cat "$INSTALLED_FILE"
+}
+
+# Command: add
+cmd_add() {
+    init_dirs
+    
+    for pkg_name in "$@"; do
+        # Check if already installed
+        if [ -n "$(get_installed_version "$pkg_name")" ]; then
+            echo "Package '$pkg_name' is already installed"
+            continue
+        fi
+        
+        # Get package info
+        link=$(get_pkg_info "$pkg_name")
+        
+        if [ -z "$link" ]; then
+            echo "Error: Package '$pkg_name' not found in repository"
+            continue
+        fi
+        
+        # Extract version from JSON
+        ver=$(get_pkg_ver "$pkg_name")
+        
+        echo "Installing $pkg_name=$ver..."
+        
+        # Download
+        temp_file="/tmp/${pkg_name}.tar.gz"
+        if ! wget -O "$temp_file" "$link"; then
+            echo "Error: Failed to download $pkg_name"
+            rm -f "$temp_file"
+            continue
+        fi
+        
+        # Extract to root
+        if ! tar -xzf "$temp_file" -C /; then
+            echo "Error: Failed to extract $pkg_name"
+            rm -f "$temp_file"
+            continue
+        fi
+        
+        # Get list of files from tar and save to .files
+        tar -tzf "$temp_file" | sed 's/^/\//' > "$FILES_DIR/${pkg_name}.files"
+        
+        # Add to installed.info
+        add_installed "$pkg_name" "$ver"
+        
+        rm -f "$temp_file"
+        echo "Package '$pkg_name' installed successfully"
+    done
+}
+
+# Command: del
+cmd_del() {
+    init_dirs
+    
+    for pkg_name in "$@"; do
+        # Check if installed
+        if [ -z "$(get_installed_version "$pkg_name")" ]; then
+            echo "Package '$pkg_name' is not installed"
+            continue
+        fi
+        
+        echo "Removing $pkg_name..."
+        
+        # Remove files
+        files_list="$FILES_DIR/${pkg_name}.files"
+        if [ -f "$files_list" ]; then
+            while read -r file; do
+                rm -f "$file" 2>/dev/null
+            done < "$files_list"
+            rm -f "$files_list"
+        fi
+        
+        # Remove from installed.info
+        remove_installed "$pkg_name"
+        echo "Package '$pkg_name' removed"
+    done
+}
+
+# Command: up
+cmd_up() {
+    init_dirs
+    
+    # If no arguments, update all packages
+    if [ $# -eq 0 ]; then
+        if [ ! -f "$INSTALLED_FILE" ]; then
+            echo "No packages installed"
+            return 0
+        fi
+        
+        while read -r line; do
+            pkg_name=$(echo "$line" | cut -d'=' -f1)
+            set -- "$pkg_name"
+            cmd_up "$pkg_name"
+        done < "$INSTALLED_FILE"
+        return 0
+    fi
+    
+    # Update specific packages
+    for pkg_name in "$@"; do
+        installed_ver=$(get_installed_version "$pkg_name")
+        
+        if [ -z "$installed_ver" ]; then
+            echo "Package '$pkg_name' is not installed"
+            continue
+        fi
+        
+        link=$(get_pkg_info "$pkg_name")
+        
+        if [ -z "$link" ]; then
+            echo "Error: Package '$pkg_name' not found in repository"
+            continue
+        fi
+        
+        available_ver=$(get_pkg_ver "$pkg_name")
+        
+        if [ "$installed_ver" = "$available_ver" ]; then
+            echo "Package '$pkg_name' is already up to date"
+            continue
+        fi
+        
+        echo "Updating $pkg_name: $installed_ver → $available_ver"
+        cmd_del "$pkg_name"
+        cmd_add "$pkg_name"
+    done
+}
+
+# Main
+main() {
+    acquire_lock
+    
+    cmd="$1"
+    shift
+    
+    check_root "$cmd"
+    
+    case "$cmd" in
+        sync)
+            cmd_sync
+            ;;
+        list)
+            cmd_list
+            ;;
+        add)
+            if [ $# -eq 0 ]; then
+                echo "Usage: spkg add <pkg> [pkg...]"
+                exit 1
+            fi
+            cmd_add "$@"
+            ;;
+        del)
+            if [ $# -eq 0 ]; then
+                echo "Usage: spkg del <pkg> [pkg...]"
+                exit 1
+            fi
+            cmd_del "$@"
+            ;;
+        up)
+            cmd_up "$@"
+            ;;
+        *)
+            echo "Usage: spkg {sync|list|add|del|up} [options]"
+            echo ""
+            echo "Commands:"
+            echo "  sync              Download repository"
+            echo "  list              List installed packages"
+            echo "  add <pkg> [...]   Install packages"
+            echo "  del <pkg> [...]   Remove packages"
+            echo "  up [pkg ...]      Update packages (all if no args)"
+            exit 1
+            ;;
+    esac
+}
+
+main "$@"
