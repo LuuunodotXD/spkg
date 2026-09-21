@@ -28,5 +28,10 @@
     "pkg": "ufetch",
     "ver": "1.1.0",
     "link": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/ufetch-1.1.0.tar.gz"
+  },
+  {
+    "pkg": "curl",
+    "ver": "8.12.0",
+    "link": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/curl-8.12.0.tar.gz"
   }
 ]
