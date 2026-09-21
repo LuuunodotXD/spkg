@@ -38,5 +38,10 @@
     "pkg": "links",
     "ver": "2.30",
     "link": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/links-2.30.tar.gz"
+  },
+  {
+    "pkg": "tmux",
+    "ver": "3.5",
+    "link": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/tmux-3.5.tar.gz"
   }
 ]
