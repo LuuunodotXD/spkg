@@ -41,7 +41,7 @@ get_pkg_info() {
     pkg_name="$1"
     
     grep -A 2 "\"pkg\": \"$pkg_name\"" "$PACKAGES_FILE" | \
-    grep "\"link\"" | \
+    grep "\"url\"" | \
     sed 's/.*: "\([^"]*\)".*/\1/'
 }
 
@@ -113,9 +113,9 @@ cmd_add() {
         fi
         
         # Get package info
-        link=$(get_pkg_info "$pkg_name")
+        url=$(get_pkg_info "$pkg_name")
         
-        if [ -z "$link" ]; then
+        if [ -z "$url" ]; then
             echo "error: package '$pkg_name' not found in repository"
             continue
         fi
@@ -127,7 +127,7 @@ cmd_add() {
         
         # Download
         temp_file="/tmp/${pkg_name}.tar.gz"
-        if ! wget -O "$temp_file" "$link"; then
+        if ! wget -O "$temp_file" "$url"; then
             echo "error: failed to download $pkg_name"
             rm -f "$temp_file"
             continue
@@ -207,9 +207,9 @@ cmd_up() {
             continue
         fi
         
-        link=$(get_pkg_info "$pkg_name")
+        url=$(get_pkg_info "$pkg_name")
         
-        if [ -z "$link" ]; then
+        if [ -z "$url" ]; then
             echo "error: package '$pkg_name' not found in repository"
             continue
         fi
