@@ -53,5 +53,20 @@
     "pkg": "make",
     "ver": "4.4.1",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/make-4.4.1.tar.gz"
+  },
+  {
+    "pkg": "gcc",
+    "ver": "15.2.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/gcc-15.2.0.tar.gz"
+  },
+  {
+    "pkg": "binutils",
+    "ver": "2.44",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/binutils-2.44.tar.gz"
+  },
+  {
+    "pkg": "build-base",
+    "ver": "1.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/build-base-1.0.tar.gz"
   }
 ]
