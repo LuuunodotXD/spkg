@@ -43,5 +43,15 @@
     "pkg": "tmux",
     "ver": "3.5",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/tmux-3.5.tar.gz"
+  },
+  {
+    "pkg": "tcc",
+    "ver": "0.9.28rc",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/tcc-0.9.28rc.tar.gz"
+  },
+  {
+    "pkg": "make",
+    "ver": "4.4.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/make-4.4.1.tar.gz"
   }
 ]
