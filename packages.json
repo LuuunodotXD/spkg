@@ -68,5 +68,20 @@
     "pkg": "build-base",
     "ver": "1.0",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/build-base-1.0.tar.gz"
+  },
+  {
+    "pkg": "dbus",
+    "ver": "1.16.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/dbus-1.16.0.tar.gz"
+  },
+  {
+    "pkg": "eudev",
+    "ver": "3.2.14",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/eudev-3.2.14.tar.gz"
+  },
+  {
+    "pkg": "expat",
+    "ver": "2.7.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/expat-2.7.1.tar.gz"
   }
 ]
