@@ -85,9 +85,39 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/expat-2.7.1.tar.gz"
   },
   {
+    "pkg": "at-spi2-atk",
+    "ver": "2.38.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/at-spi2-atk-2.38.0.tar.gz"
+  },
+  {
+    "pkg": "at-spi2-core",
+    "ver": "2.52.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/at-spi2-core-2.52.0.tar.gz"
+  },
+  {
+    "pkg": "atk",
+    "ver": "2.38.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/atk-2.38.0.tar.gz"
+  },
+  {
+    "pkg": "bzip2",
+    "ver": "1.0.8",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/bzip2-1.0.8.tar.gz"
+  },
+  {
     "pkg": "ca-certificates",
     "ver": "2026.11.06",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/ca-certificates-2026.11.06.tar.gz"
+  },
+  {
+    "pkg": "cairo",
+    "ver": "1.18.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/cairo-1.18.0.tar.gz"
+  },
+  {
+    "pkg": "feh",
+    "ver": "3.10.3",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/feh-3.10.3.tar.gz"
   },
   {
     "pkg": "font-alias",
@@ -135,9 +165,59 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/freetype-2.13.3.tar.gz"
   },
   {
+    "pkg": "fribidi",
+    "ver": "1.0.15",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/fribidi-1.0.15.tar.gz"
+  },
+  {
+    "pkg": "gdk-pixbuf",
+    "ver": "2.42.12",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/gdk-pixbuf-2.42.12.tar.gz"
+  },
+  {
+    "pkg": "giflib",
+    "ver": "5.2.2",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/giflib-5.2.2.tar.gz"
+  },
+  {
     "pkg": "git",
     "ver": "2.56.0",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/git-2.56.0.tar.gz"
+  },
+  {
+    "pkg": "glib",
+    "ver": "2.80.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/glib-2.80.5.tar.gz"
+  },
+  {
+    "pkg": "glu",
+    "ver": "9.0.3",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/glu-9.0.3.tar.gz"
+  },
+  {
+    "pkg": "gtk2",
+    "ver": "2.24.33",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/gtk2-2.24.33.tar.gz"
+  },
+  {
+    "pkg": "gtk3",
+    "ver": "3.24.43",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/gtk3-3.24.43.tar.gz"
+  },
+  {
+    "pkg": "harfbuzz",
+    "ver": "8.5.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/harfbuzz-8.5.0.tar.gz"
+  },
+  {
+    "pkg": "hicolor-icon-theme",
+    "ver": "0.18",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/hicolor-icon-theme-0.18.tar.gz"
+  },
+  {
+    "pkg": "imlib2",
+    "ver": "1.12.3",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/imlib2-1.12.3.tar.gz"
   },
   {
     "pkg": "less",
@@ -145,14 +225,29 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/less-710.tar.gz"
   },
   {
+    "pkg": "libcroco",
+    "ver": "0.6.13",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libcroco-0.6.13.tar.gz"
+  },
+  {
     "pkg": "libdrm",
     "ver": "2.4.124",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libdrm-2.4.124.tar.gz"
   },
   {
+    "pkg": "libepoxy",
+    "ver": "1.5.10",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libepoxy-1.5.10.tar.gz"
+  },
+  {
     "pkg": "libevdev",
     "ver": "1.13.3",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libevdev-1.13.3.tar.gz"
+  },
+  {
+    "pkg": "libffi",
+    "ver": "3.4.6",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libffi-3.4.6.tar.gz"
   },
   {
     "pkg": "libfontenc",
@@ -170,14 +265,39 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libinput-1.28.1.tar.gz"
   },
   {
+    "pkg": "libjpeg-turbo",
+    "ver": "3.0.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libjpeg-turbo-3.0.4.tar.gz"
+  },
+  {
     "pkg": "libpciaccess",
     "ver": "0.18.1",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libpciaccess-0.18.1.tar.gz"
   },
   {
+    "pkg": "libpng",
+    "ver": "1.6.59",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libpng-1.6.59.tar.gz"
+  },
+  {
+    "pkg": "librsvg",
+    "ver": "2.40.21",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/librsvg-2.40.21.tar.gz"
+  },
+  {
     "pkg": "libsm",
     "ver": "1.2.5",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libsm-1.2.5.tar.gz"
+  },
+  {
+    "pkg": "libtiff",
+    "ver": "4.6.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libtiff-4.6.0.tar.gz"
+  },
+  {
+    "pkg": "libwebp",
+    "ver": "1.4.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libwebp-1.4.0.tar.gz"
   },
   {
     "pkg": "libx11",
@@ -198,6 +318,11 @@
     "pkg": "libxcb",
     "ver": "1.17.0",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxcb-1.17.0.tar.gz"
+  },
+  {
+    "pkg": "libxcomposite",
+    "ver": "0.4.6",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxcomposite-0.4.6.tar.gz"
   },
   {
     "pkg": "libxcursor",
@@ -230,6 +355,11 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxfixes-6.0.1.tar.gz"
   },
   {
+    "pkg": "libxfont",
+    "ver": "1.5.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxfont-1.5.4.tar.gz"
+  },
+  {
     "pkg": "libxfont2",
     "ver": "2.0.7",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxfont2-2.0.7.tar.gz"
@@ -240,9 +370,29 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxft-2.3.8.tar.gz"
   },
   {
+    "pkg": "libxi",
+    "ver": "1.8.2",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxi-1.8.2.tar.gz"
+  },
+  {
+    "pkg": "libxinerama",
+    "ver": "1.1.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxinerama-1.1.5.tar.gz"
+  },
+  {
+    "pkg": "libxkbcommon",
+    "ver": "1.7.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxkbcommon-1.7.0.tar.gz"
+  },
+  {
     "pkg": "libxkbfile",
     "ver": "1.1.3",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxkbfile-1.1.3.tar.gz"
+  },
+  {
+    "pkg": "libxml2",
+    "ver": "2.12.9",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxml2-2.12.9.tar.gz"
   },
   {
     "pkg": "libxmu",
@@ -255,6 +405,11 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxpm-3.5.17.tar.gz"
   },
   {
+    "pkg": "libxpresent",
+    "ver": "1.0.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxpresent-1.0.1.tar.gz"
+  },
+  {
     "pkg": "libxrandr",
     "ver": "1.5.4",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxrandr-1.5.4.tar.gz"
@@ -263,6 +418,16 @@
     "pkg": "libxrender",
     "ver": "0.9.12",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxrender-0.9.12.tar.gz"
+  },
+  {
+    "pkg": "libxres",
+    "ver": "1.2.2",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxres-1.2.2.tar.gz"
+  },
+  {
+    "pkg": "libxscrnsaver",
+    "ver": "1.2.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxscrnsaver-1.2.4.tar.gz"
   },
   {
     "pkg": "libxshmfence",
@@ -275,9 +440,39 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxt-1.3.1.tar.gz"
   },
   {
+    "pkg": "libxtst",
+    "ver": "1.2.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxtst-1.2.5.tar.gz"
+  },
+  {
+    "pkg": "libxv",
+    "ver": "1.0.12",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxv-1.0.12.tar.gz"
+  },
+  {
+    "pkg": "libxvmc",
+    "ver": "1.0.14",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxvmc-1.0.14.tar.gz"
+  },
+  {
+    "pkg": "libxxf86dga",
+    "ver": "1.1.6",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxxf86dga-1.1.6.tar.gz"
+  },
+  {
     "pkg": "libxxf86vm",
     "ver": "1.1.6",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libxxf86vm-1.1.6.tar.gz"
+  },
+  {
+    "pkg": "mesa",
+    "ver": "24.0.9",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/mesa-24.0.9.tar.gz"
+  },
+  {
+    "pkg": "mesa-demos",
+    "ver": "9.0.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/mesa-demos-9.0.0.tar.gz"
   },
   {
     "pkg": "mtdev",
@@ -290,14 +485,34 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/nettle-3.10.1.tar.gz"
   },
   {
+    "pkg": "pango",
+    "ver": "1.50.14",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/pango-1.50.14.tar.gz"
+  },
+  {
     "pkg": "patch",
     "ver": "2.8",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/patch-2.8.tar.gz"
   },
   {
+    "pkg": "pcre2",
+    "ver": "10.44",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/pcre2-10.44.tar.gz"
+  },
+  {
     "pkg": "pixman",
     "ver": "0.44.2",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/pixman-0.44.2.tar.gz"
+  },
+  {
+    "pkg": "setxkbmap",
+    "ver": "1.3.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/setxkbmap-1.3.4.tar.gz"
+  },
+  {
+    "pkg": "shared-mime-info",
+    "ver": "2.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/shared-mime-info-2.4.tar.gz"
   },
   {
     "pkg": "twm",
@@ -315,9 +530,49 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xbitmaps-1.1.3.tar.gz"
   },
   {
+    "pkg": "xcb-util",
+    "ver": "0.4.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xcb-util-0.4.1.tar.gz"
+  },
+  {
+    "pkg": "xcb-util-cursor",
+    "ver": "0.1.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xcb-util-cursor-0.1.5.tar.gz"
+  },
+  {
+    "pkg": "xcb-util-image",
+    "ver": "0.4.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xcb-util-image-0.4.1.tar.gz"
+  },
+  {
+    "pkg": "xcb-util-keysyms",
+    "ver": "0.4.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xcb-util-keysyms-0.4.1.tar.gz"
+  },
+  {
+    "pkg": "xcb-util-renderutil",
+    "ver": "0.3.10",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xcb-util-renderutil-0.3.10.tar.gz"
+  },
+  {
+    "pkg": "xcb-util-wm",
+    "ver": "0.4.2",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xcb-util-wm-0.4.2.tar.gz"
+  },
+  {
     "pkg": "xclock",
     "ver": "1.1.1",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xclock-1.1.1.tar.gz"
+  },
+  {
+    "pkg": "xdpyinfo",
+    "ver": "1.3.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xdpyinfo-1.3.4.tar.gz"
+  },
+  {
+    "pkg": "xev",
+    "ver": "1.2.6",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xev-1.2.6.tar.gz"
   },
   {
     "pkg": "xf86-input-libinput",
@@ -330,9 +585,19 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xf86-video-fbdev-0.5.1.tar.gz"
   },
   {
+    "pkg": "xhost",
+    "ver": "1.0.10",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xhost-1.0.10.tar.gz"
+  },
+  {
     "pkg": "xinit",
     "ver": "1.4.4",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xinit-1.4.4.tar.gz"
+  },
+  {
+    "pkg": "xinput",
+    "ver": "1.6.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xinput-1.6.4.tar.gz"
   },
   {
     "pkg": "xkbcomp",
@@ -343,6 +608,41 @@
     "pkg": "xkeyboard-config",
     "ver": "2.44",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xkeyboard-config-2.44.tar.gz"
+  },
+  {
+    "pkg": "xkill",
+    "ver": "1.0.6",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xkill-1.0.6.tar.gz"
+  },
+  {
+    "pkg": "xlsclients",
+    "ver": "1.1.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xlsclients-1.1.5.tar.gz"
+  },
+  {
+    "pkg": "xlsfonts",
+    "ver": "1.0.8",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xlsfonts-1.0.8.tar.gz"
+  },
+  {
+    "pkg": "xmodmap",
+    "ver": "1.0.11",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xmodmap-1.0.11.tar.gz"
+  },
+  {
+    "pkg": "xorg",
+    "ver": "1.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xorg-1.0.tar.gz"
+  },
+  {
+    "pkg": "xorg-full",
+    "ver": "1.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xorg-full-1.0.tar.gz"
+  },
+  {
+    "pkg": "xorg-minimum",
+    "ver": "1.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xorg-minimum-1.0.tar.gz"
   },
   {
     "pkg": "xorg-server",
@@ -360,6 +660,31 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xorgproto-2024.1.tar.gz"
   },
   {
+    "pkg": "xprop",
+    "ver": "1.2.8",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xprop-1.2.8.tar.gz"
+  },
+  {
+    "pkg": "xrandr",
+    "ver": "1.5.3",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xrandr-1.5.3.tar.gz"
+  },
+  {
+    "pkg": "xrdb",
+    "ver": "1.2.2",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xrdb-1.2.2.tar.gz"
+  },
+  {
+    "pkg": "xrefresh",
+    "ver": "1.1.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xrefresh-1.1.0.tar.gz"
+  },
+  {
+    "pkg": "xset",
+    "ver": "1.2.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xset-1.2.5.tar.gz"
+  },
+  {
     "pkg": "xsetroot",
     "ver": "1.1.3",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xsetroot-1.1.3.tar.gz"
@@ -370,28 +695,23 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xterm-412.tar.gz"
   },
   {
+    "pkg": "xwininfo",
+    "ver": "1.1.6",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xwininfo-1.1.6.tar.gz"
+  },
+  {
+    "pkg": "xz",
+    "ver": "5.6.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xz-5.6.4.tar.gz"
+  },
+  {
     "pkg": "zlib",
     "ver": "1.3.1",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/zlib-1.3.1.tar.gz"
   },
   {
-    "pkg": "mesa",
-    "ver": "24.0.9",
-    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/mesa-24.0.9.tar.gz"
-  },
-  {
-    "pkg": "mesa-demos",
-    "ver": "9.0.0",
-    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/mesa-demos-9.0.0.tar.gz"
-  },
-  {
-    "pkg": "glu",
-    "ver": "9.0.3",
-    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/glu-9.0.3.tar.gz"
-  },
-  {
-    "pkg": "libepoxy",
-    "ver": "1.5.10",
-    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libepoxy-1.5.10.tar.gz"
+    "pkg": "zstd",
+    "ver": "1.5.6",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/zstd-1.5.6.tar.gz"
   }
 ]
