@@ -85,6 +85,11 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/expat-2.7.1.tar.gz"
   },
   {
+    "pkg": "adwaita-icon-theme",
+    "ver": "3.38.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/adwaita-icon-theme-3.38.0.tar.gz"
+  },
+  {
     "pkg": "at-spi2-atk",
     "ver": "2.38.0",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/at-spi2-atk-2.38.0.tar.gz"
@@ -193,6 +198,16 @@
     "pkg": "glu",
     "ver": "9.0.3",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/glu-9.0.3.tar.gz"
+  },
+  {
+    "pkg": "gnome-themes-extra",
+    "ver": "3.28",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/gnome-themes-extra-3.28.tar.gz"
+  },
+  {
+    "pkg": "gtk-defaults",
+    "ver": "1.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/gtk-defaults-1.0.tar.gz"
   },
   {
     "pkg": "gtk2",
@@ -636,8 +651,8 @@
   },
   {
     "pkg": "xorg-full",
-    "ver": "1.0",
-    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xorg-full-1.0.tar.gz"
+    "ver": "1.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xorg-full-1.1.tar.gz"
   },
   {
     "pkg": "xorg-minimum",
@@ -663,6 +678,11 @@
     "pkg": "xprop",
     "ver": "1.2.8",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xprop-1.2.8.tar.gz"
+  },
+  {
+    "pkg": "xpsu",
+    "ver": "1.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xpsu-1.0.tar.gz"
   },
   {
     "pkg": "xrandr",
