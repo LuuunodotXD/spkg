@@ -90,6 +90,21 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/adwaita-icon-theme-3.38.0.tar.gz"
   },
   {
+    "pkg": "alsa-lib",
+    "ver": "1.2.14",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/alsa-lib-1.2.14.tar.gz"
+  },
+  {
+    "pkg": "alsa-ucm-conf",
+    "ver": "1.2.14",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/alsa-ucm-conf-1.2.14.tar.gz"
+  },
+  {
+    "pkg": "alsa-utils",
+    "ver": "1.2.14",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/alsa-utils-1.2.14.tar.gz"
+  },
+  {
     "pkg": "at-spi2-atk",
     "ver": "2.38.0",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/at-spi2-atk-2.38.0.tar.gz"
@@ -123,6 +138,11 @@
     "pkg": "feh",
     "ver": "3.10.3",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/feh-3.10.3.tar.gz"
+  },
+  {
+    "pkg": "flac",
+    "ver": "1.4.3",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/flac-1.4.3.tar.gz"
   },
   {
     "pkg": "font-alias",
@@ -235,6 +255,11 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/imlib2-1.12.3.tar.gz"
   },
   {
+    "pkg": "lame",
+    "ver": "3.100",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/lame-3.100.tar.gz"
+  },
+  {
     "pkg": "less",
     "ver": "710",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/less-710.tar.gz"
@@ -285,6 +310,16 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libjpeg-turbo-3.0.4.tar.gz"
   },
   {
+    "pkg": "libltdl",
+    "ver": "2.5.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libltdl-2.5.4.tar.gz"
+  },
+  {
+    "pkg": "libogg",
+    "ver": "1.3.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libogg-1.3.5.tar.gz"
+  },
+  {
     "pkg": "libpciaccess",
     "ver": "0.18.1",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libpciaccess-0.18.1.tar.gz"
@@ -296,8 +331,8 @@
   },
   {
     "pkg": "librsvg",
-    "ver": "2.40.21",
-    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/librsvg-2.40.21.tar.gz"
+    "ver": "2.40.10",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/librsvg-2.40.10.tar.gz"
   },
   {
     "pkg": "libsm",
@@ -305,9 +340,19 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libsm-1.2.5.tar.gz"
   },
   {
+    "pkg": "libsndfile",
+    "ver": "1.2.2.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libsndfile-1.2.2.1.tar.gz"
+  },
+  {
     "pkg": "libtiff",
     "ver": "4.6.0",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libtiff-4.6.0.tar.gz"
+  },
+  {
+    "pkg": "libvorbis",
+    "ver": "1.3.7",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libvorbis-1.3.7.tar.gz"
   },
   {
     "pkg": "libwebp",
@@ -490,14 +535,29 @@
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/mesa-demos-9.0.0.tar.gz"
   },
   {
+    "pkg": "mpg123",
+    "ver": "1.32.10",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/mpg123-1.32.10.tar.gz"
+  },
+  {
     "pkg": "mtdev",
     "ver": "1.1.7",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/mtdev-1.1.7.tar.gz"
   },
   {
+    "pkg": "netsurf",
+    "ver": "3.11",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/netsurf-3.11.tar.gz"
+  },
+  {
     "pkg": "nettle",
     "ver": "3.10.1",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/nettle-3.10.1.tar.gz"
+  },
+  {
+    "pkg": "opus",
+    "ver": "1.5.2",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/opus-1.5.2.tar.gz"
   },
   {
     "pkg": "pango",
@@ -518,6 +578,11 @@
     "pkg": "pixman",
     "ver": "0.44.2",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/pixman-0.44.2.tar.gz"
+  },
+  {
+    "pkg": "pulseaudio",
+    "ver": "17.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/pulseaudio-17.0.tar.gz"
   },
   {
     "pkg": "setxkbmap",
