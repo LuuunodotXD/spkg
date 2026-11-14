@@ -41,7 +41,7 @@ get_pkg_info() {
     pkg_name="$1"
     
     grep -A 2 "\"pkg\": \"$pkg_name\"" "$PACKAGES_FILE" | \
-    grep "\"url\"" | \
+    grep -E "\"(url|link)\"" | \
     sed 's/.*: "\([^"]*\)".*/\1/'
 }
 
@@ -126,7 +126,7 @@ cmd_add() {
         echo "installing $pkg_name-$ver..."
         
         # Download
-        temp_file="/tmp/${pkg_name}.tar.gz"
+        temp_file="/tmp/${pkg_name}.pkg"
         if ! wget -O "$temp_file" "$url"; then
             echo "error: failed to download $pkg_name"
             rm -f "$temp_file"
@@ -134,14 +134,16 @@ cmd_add() {
         fi
         
         # Extract to root
-        if ! tar -xzf "$temp_file" -C /; then
-            echo "error: failed to extract $pkg_name"
+        # sem flag de compressao: o tar do toybox detecta gzip, bzip2, xz e zstd sozinho.
+        # xz e zstd usam o xzcat / zstdcat, entao o pacote xz (ou zstd) precisa estar instalado.
+        if ! tar -xf "$temp_file" -C /; then
+            echo "error: failed to extract $pkg_name (if the package is .xz, install xz first)"
             rm -f "$temp_file"
             continue
         fi
         
         # Get list of files from tar and save to .files
-        tar -tzf "$temp_file" | sed 's/^/\//' > "$FILES_DIR/${pkg_name}.files"
+        tar -tf "$temp_file" | sed 's/^/\//' > "$FILES_DIR/${pkg_name}.files"
         
         # Add to installed.info
         add_installed "$pkg_name" "$ver"
