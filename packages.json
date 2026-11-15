@@ -798,5 +798,135 @@
     "pkg": "zstd",
     "ver": "1.5.6",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/zstd-1.5.6.tar.gz"
+  },
+  {
+    "pkg": "wireless-regdb",
+    "ver": "2026.09.03",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/wireless-regdb-2026.09.03.tar.bz2"
+  },
+  {
+    "pkg": "firmware-rtlwifi",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-rtlwifi-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-rtw88",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-rtw88-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-rtw89",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-rtw89-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-ath9k_htc",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-ath9k_htc-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-ath10k",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-ath10k-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-mediatek",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-mediatek-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-ralink",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-ralink-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-brcm",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-brcm-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-dvm",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-dvm-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-3160",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-3160-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-3168",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-3168-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-7260",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-7260-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-7265",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-7265-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-8265",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-8265-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-9260",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-9260-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-ax200",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-ax200-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-ax201",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-ax201-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-ax210",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-ax210-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-ax211",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-ax211-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-iwlwifi-ax411",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-iwlwifi-ax411-20261019.tar.bz2"
+  },
+  {
+    "pkg": "libnl",
+    "ver": "3.11.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libnl-3.11.0.tar.gz"
+  },
+  {
+    "pkg": "iw",
+    "ver": "6.9",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/iw-6.9.tar.gz"
+  },
+  {
+    "pkg": "wpa_supplicant",
+    "ver": "2.11.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/wpa_supplicant-2.11.1.tar.gz"
+  },
+  {
+    "pkg": "br-wifi",
+    "ver": "1.9",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/br-wifi-1.9.tar.gz"
+  },
+  {
+    "pkg": "linux-modules",
+    "ver": "6.1.187-baseroot",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/linux-modules-6.1.187-baseroot.tar.bz2"
   }
 ]
