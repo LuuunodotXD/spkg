@@ -921,8 +921,8 @@
   },
   {
     "pkg": "br-wifi",
-    "ver": "3.0",
-    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/br-wifi-3.0.tar.gz"
+    "ver": "3.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/br-wifi-3.1.tar.gz"
   },
   {
     "pkg": "linux-modules",
