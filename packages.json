@@ -921,8 +921,8 @@
   },
   {
     "pkg": "br-wifi",
-    "ver": "1.9",
-    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/br-wifi-1.9.tar.gz"
+    "ver": "3.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/br-wifi-3.0.tar.gz"
   },
   {
     "pkg": "linux-modules",
