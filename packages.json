@@ -928,5 +928,30 @@
     "pkg": "linux-modules",
     "ver": "6.1.187-baseroot",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/linux-modules-6.1.187-baseroot.tar.bz2"
+  },
+  {
+    "pkg": "firmware-i915",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-i915-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-audio",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-audio-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-bluetooth",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-bluetooth-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-rtl_nic",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-rtl_nic-20261019.tar.bz2"
+  },
+  {
+    "pkg": "firmware-ath11k",
+    "ver": "20261019",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-ath11k-20261019.tar.bz2"
   }
 ]
