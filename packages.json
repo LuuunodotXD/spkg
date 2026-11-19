@@ -953,5 +953,175 @@
     "pkg": "firmware-ath11k",
     "ver": "20261019",
     "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firmware-ath11k-20261019.tar.bz2"
+  },
+  {
+    "pkg": "aom-libs",
+    "ver": "3.14.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/aom-libs-3.14.1.tar.gz"
+  },
+  {
+    "pkg": "brotli-libs",
+    "ver": "1.2.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/brotli-libs-1.2.1.tar.gz"
+  },
+  {
+    "pkg": "ffmpeg7-libavcodec",
+    "ver": "7.1.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/ffmpeg7-libavcodec-7.1.5.tar.gz"
+  },
+  {
+    "pkg": "ffmpeg7-libavutil",
+    "ver": "7.1.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/ffmpeg7-libavutil-7.1.5.tar.gz"
+  },
+  {
+    "pkg": "ffmpeg7-libswresample",
+    "ver": "7.1.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/ffmpeg7-libswresample-7.1.5.tar.gz"
+  },
+  {
+    "pkg": "icu",
+    "ver": "78.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/icu-78.1.tar.gz"
+  },
+  {
+    "pkg": "icu-data-full",
+    "ver": "78.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/icu-data-full-78.1.tar.gz"
+  },
+  {
+    "pkg": "icu-libs",
+    "ver": "78.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/icu-libs-78.1.tar.gz"
+  },
+  {
+    "pkg": "lcms2",
+    "ver": "2.19",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/lcms2-2.19.tar.gz"
+  },
+  {
+    "pkg": "libSvtAv1Enc",
+    "ver": "4.1.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libSvtAv1Enc-4.1.0.tar.gz"
+  },
+  {
+    "pkg": "libdav1d",
+    "ver": "1.5.3",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libdav1d-1.5.3.tar.gz"
+  },
+  {
+    "pkg": "libevent",
+    "ver": "2.1.13",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libevent-2.1.13.tar.gz"
+  },
+  {
+    "pkg": "libgcc",
+    "ver": "15.2.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libgcc-15.2.0.tar.gz"
+  },
+  {
+    "pkg": "libgomp",
+    "ver": "15.2.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libgomp-15.2.0.tar.gz"
+  },
+  {
+    "pkg": "libhwy",
+    "ver": "1.3.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libhwy-1.3.0.tar.gz"
+  },
+  {
+    "pkg": "libjpeg-firefox",
+    "ver": "3.1.3",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libjpeg-turbo-alpine-3.1.3.tar.gz"
+  },
+  {
+    "pkg": "libjxl",
+    "ver": "0.11.2",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libjxl-0.11.2.tar.gz"
+  },
+  {
+    "pkg": "libstdc++",
+    "ver": "15.2.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libstdc++-15.2.0.tar.gz"
+  },
+  {
+    "pkg": "libtheora",
+    "ver": "1.2.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libtheora-1.2.0.tar.gz"
+  },
+  {
+    "pkg": "libva",
+    "ver": "2.23.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libva-2.23.0.tar.gz"
+  },
+  {
+    "pkg": "libvdpau",
+    "ver": "1.5",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libvdpau-1.5.tar.gz"
+  },
+  {
+    "pkg": "libvpl",
+    "ver": "2.15.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libvpl-2.15.0.tar.gz"
+  },
+  {
+    "pkg": "libvpx",
+    "ver": "1.15.2",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/libvpx-1.15.2.tar.gz"
+  },
+  {
+    "pkg": "nspr",
+    "ver": "4.38.2",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/nspr-4.38.2.tar.gz"
+  },
+  {
+    "pkg": "nss",
+    "ver": "3.133",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/nss-3.133.tar.gz"
+  },
+  {
+    "pkg": "numactl",
+    "ver": "2.0.19",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/numactl-2.0.19.tar.gz"
+  },
+  {
+    "pkg": "rav1e-libs",
+    "ver": "0.8.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/rav1e-libs-0.8.1.tar.gz"
+  },
+  {
+    "pkg": "scudo-malloc",
+    "ver": "22.1.3",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/scudo-malloc-22.1.3.tar.gz"
+  },
+  {
+    "pkg": "soxr",
+    "ver": "0.1.3",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/soxr-0.1.3.tar.gz"
+  },
+  {
+    "pkg": "sqlite-libs",
+    "ver": "3.53.4",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/sqlite-libs-3.53.4.tar.gz"
+  },
+  {
+    "pkg": "x264-libs",
+    "ver": "0.164.3108",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/x264-libs-0.164.3108.tar.gz"
+  },
+  {
+    "pkg": "x265-libs",
+    "ver": "4.1",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/x265-libs-4.1.tar.gz"
+  },
+  {
+    "pkg": "xvidcore",
+    "ver": "1.3.7",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/xvidcore-1.3.7.tar.gz"
+  },
+  {
+    "pkg": "firefox",
+    "ver": "153.7.0-esr",
+    "url": "https://github.com/LuuunodotXD/Dump-Package-Recipes/releases/download/2026-17-11/firefox-153.7.0-esr.tar.bz2"
   }
 ]
