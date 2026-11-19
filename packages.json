@@ -1122,6 +1122,11 @@
   {
     "pkg": "firefox",
     "ver": "153.7.0-esr",
-    "url": "https://github.com/LuuunodotXD/Dump-Package-Recipes/releases/download/2026-17-11/firefox-153.7.0-esr.tar.bz2"
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/firefox-153.7.0-esr.tar.bz2"
+  },
+  {
+    "pkg": "fortfetch",
+    "ver": "0.9.0",
+    "url": "https://raw.githubusercontent.com/LuuunodotXD/Dump-Packages/main/main/fortfetch-0.9.0.tar.gz"
   }
 ]
